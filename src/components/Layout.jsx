@@ -1,7 +1,5 @@
 import React from "react";
 import "./Layout.css"; 
-import Contact from "../pages/Contact";
-import { Navbar } from "react-bootstrap";
 
 const Layout = ({children}) => {
   return (

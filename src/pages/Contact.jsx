@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Pages.css"; 
 
 const Contact = () => {
+  
   return (
     <section>
       <Container fluid className="page-section" id="Contact">

@@ -1,29 +1,31 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "./Pages.css"; 
+import React from 'react';
+import { Card, Button, Row, Col } from 'react-bootstrap';
 
-const Portfolio = () => {
-  return (
-    <section>
-      <Container fluid className="page-section" id="portolio">
-        <Container className="page-content">
-          <Row className="justify-content-center"> {/* Center the row */}
-            <Col md={7} className="home-header">
-              <h1 className="heading-name">
-                <strong className="main-name">Portfolio</strong>
-              </h1>
-              <div style={{ padding: 50, textAlign: "left" }}>
-                {/* Add any additional content here */}
-              </div>
-            </Col>
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              Portfolio              
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-    </section>
-  );
-};
+
+
+function Portfolio(props) {
+
+
+    return (
+        <div className="pb-5">
+            <Row className="justify-content-center" style={{ maxHeight: "90vh" }}>
+                {props.projects.map((project) => (
+                    <Col key={project.id} md={5} className="mb-4">
+                        <Card style={{ maxWidth: '345px' }}>
+                            <Card.Img variant="top" src={project.image} alt="" height="194" />
+                            <Card.Body>
+                                <Card.Title>{project.title}</Card.Title>
+                                <Card.Text>{project.about}</Card.Text>
+                                <Button href={project.url} variant="primary" size="sm">View the project</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+        </div>
+    );
+}
+
 
 export default Portfolio;
