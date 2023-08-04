@@ -1,22 +1,25 @@
 .nav-bar {
+    background-color: #3586ff;
     display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
   }
   
   .nav-item {
     display: flex;
+    margin-top: 10px;
     align-items: center;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 50px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
-    margin-right: 10px;
+    margin-right: 1px;
     background-color: #ffffff; 
   }
   
-  .nav-item:last-child {
+  /* .nav-item:last-child {
     margin-right: 0;
-  }
+  } */
   
   .nav-item a {
     color: #333; 
@@ -28,41 +31,5 @@
     color: #83b7ff; 
   }
 
-  hamburger-icon {
-    display: none;
-    cursor: pointer;
-  }
   
-  @media (max-width: 768px) {
-    /* Change the breakpoint as per your design requirements */
-    .nav-items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f1f1f1;
-      padding: 10px;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      right: 0;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: all 0.3s ease;
-    }
-  
-    .show {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-  
-    .nav-item {
-      margin-bottom: 10px;
-    }
-  
-    .hamburger-icon {
-      display: block;
-    }
-  }
   

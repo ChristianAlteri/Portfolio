@@ -14,8 +14,9 @@ function NavBar() {
   return (
     <nav>
       <div className="nav-bar">
-        <GiHamburgerMenu className="hamburger-icon" onClick={toggleMenu} />
-        <Nav className={`nav-items ${showMenu ? "show" : ""}`}>
+        {/* <GiHamburgerMenu className="hamburger-icon" onClick={toggleMenu} />
+        <Nav className={`nav-items ${showMenu ? "show" : ""}`}> */}
+        <Nav className="nav-bar">  
           <Nav.Item>
             <Link to="/">Home</Link>
           </Nav.Item>
@@ -28,6 +29,7 @@ function NavBar() {
           <Nav.Item>
             <Link to="/contact">Contact</Link>
           </Nav.Item>
+        {/* </Nav> */}
         </Nav>
       </div>
     </nav>
