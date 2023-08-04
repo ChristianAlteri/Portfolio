@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
 import { Routes, Route } from "react-router-dom";
-import { Home } from './pages/Home';
-import { Contact } from './pages/Contact';
-import { Portfolio } from './pages/Portfolio';
-import { About } from './pages/About';
+import  Home  from './pages/Home';
+import  Contact  from './pages/Contact';
+import  Portfolio  from './pages/Portfolio';
+import  About  from './pages/About';
 
 
 const App = () => {
