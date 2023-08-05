@@ -9,18 +9,18 @@ function Portfolio(props) {
 
 
     return (
-        <div className="pb-5 white-rounded-card-container">
-          <Row className="justify-content-center" style={{ maxHeight: "90vh" }}>
+        <div className="white-rounded-card-container">
+          <Row className='white-rounded-card-container' >
             {props.projects.map((project) => (
-              <Col key={project.id} xs={12} sm={6} md={4} className="mb-4">
-                <Card className="white-rounded-card">
-                  <Card.Img variant="top" src={project.image} alt="" height="194" />
+              <Col key={project.id}  className="mb-4">
+                <Card xs={12} sm={6} md={3} className="white-rounded-card">
                   <Card.Body>
-                    <Card.Title>{project.title}</Card.Title>
-                    <Card.Text>{project.about}</Card.Text>
+                    <Card.Title className='card-title'>{project.title}</Card.Title>
+                    <Card.Text className='card-content'>{project.about}</Card.Text>
                     <Button href={project.url} variant="primary" size="sm">
                       View the project
                     </Button>
+                    <Card.Img variant="top" src={project.image} alt="" height="194" />
                   </Card.Body>
                 </Card>
               </Col>

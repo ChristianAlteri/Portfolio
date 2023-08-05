@@ -3,7 +3,8 @@
     display: flex;
     margin-left: 33%;
     width: 33%;
-    flex-basis: 33.33%;
+    /* flex-basis: 33.33%; */
+    flex-basis: calc(33.33% - 10px);
     margin-top: 10px;
     align-items: center;
     padding: 15px 15px;
@@ -16,5 +17,20 @@
 .white-rounded-card-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    margin-top: 70px; 
 }  
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px; 
+  color: #000000; 
+  text-align: center;
+}
+.card-content {
+
+  font-size: 14px; 
+  color: #403f3f; 
+  text-align: center;
+}
