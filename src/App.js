@@ -7,6 +7,7 @@ import  About  from './pages/About';
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
+import insomniaDemoImg from "./images/insomnia-demo.png";
 // import { useState, useEffect } from "react";
 // const fetchProjects = require('./utils/githubFetch'); 
 
@@ -21,42 +22,42 @@ const projects = [
       title: "Airbnb Clone",
       about: "A full recreation of the famous Airbnb app",
       url: "https://github.com/ChristianAlteri/airbnb-clone",
-      image: "./images/insomnia-demo.png"
+      image: insomniaDemoImg
   },
   {
       id: '1',
       title: "Family Vault",
       about: "A web app that stores family history data",
       url: "https://github.com/ChristianAlteri/Family-Vault",
-      image: "./images/react-cricket.png"
+      image: insomniaDemoImg
   },
   {
       id: '2',
       title: "NoSQL social network backend",
       about: "An example of a modern social media backend",
       url: "https://github.com/ChristianAlteri/Social-Network-API-NoSql",
-      image: "./images/frontend_img.png"
+      image: insomniaDemoImg
   },
-  {
+  {  
       id: '3',
       title: "Tech blog",
       about: "An example of a full stack tech blog",
       url: "https://github.com/ChristianAlteri/Tech-Blog-Full-Stack",
-      image: "./images/weather.png"
+      image: insomniaDemoImg
   },
   {
       id: '4',
       title: "Juptyer notebook to use Meshroom",
       about: "This notebook allows you to use the Meshroom via google Colab",
       url: "https://github.com/ChristianAlteri/Meshroom-Cloud-google-collab",
-      image: "./images/hue.jpeg"
+      image: insomniaDemoImg
   },
   {
       id: '5',
       title: "Other github repos",
       about: "My github profile",
       url: "https://github.com/ChristianAlteri",
-      image: "./images/quiz.png"
+      image: insomniaDemoImg
   },
 
 ]
@@ -80,7 +81,6 @@ const App = () => {
     <>
     <Layout>
       <Navbar />
-      <Footer />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
@@ -88,6 +88,7 @@ const App = () => {
           <Route path='/contact' element={<ContactForm />}></Route>
         </Routes>
     </Layout>  
+    <Footer />
     </>
   )
 }

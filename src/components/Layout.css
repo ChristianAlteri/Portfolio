@@ -10,6 +10,24 @@ section {
   background: #3586ff;
   overflow: hidden;
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Set the left position to 50% to center horizontally */
+  transform: translateX(-50%); /* Move the element to the left by 50% of its width to center it properly */
+  /* width: 100%; */
+}
+
 section .air {
   position: absolute;
   bottom: 0;
