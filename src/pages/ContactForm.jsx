@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './ContactForm.css'; 
 import { Form, Button, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 const ContactForm = ({ title }) => {
   const [formData, setFormData] = useState({
     name: '',
-    contact: '',
     email: '',
     message: '',
   });
-
 
   const [formErrors, setFormErrors] = useState({
     nameError: false,
@@ -21,21 +21,29 @@ const ContactForm = ({ title }) => {
     return /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email);
   };
 
+  
   const handleBlur = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
+    
     if (value.length <= 0 && name === 'name') {
       setFormErrors({ ...formErrors, nameError: true });
     } else if (name === 'email') {
       setFormErrors({ ...formErrors, emailError: value.length <= 0, emailError2: !isValidEmail(value) });
     }
   };
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  
+
+  const handleReload = () => {
+      window.location.reload();
+  }  
+    
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -52,20 +60,20 @@ const ContactForm = ({ title }) => {
 
     const formValid = name && email && message && !nameError && !emailError && !emailError2 && !messageError;
     if (formValid) {
-      // Perform your form submission logic here
       console.log('Form submission successful');
+      setButtonClicked(true); 
     }
   };
 
-  const { name, email, contact, message } = formData;
+  const { name, email, message } = formData;
   const { nameError, emailError, emailError2, messageError } = formErrors;
   const formValid = name && email && message && !nameError && !emailError && !emailError2 && !messageError;
 
-  return !formValid ? (
+
+  return !formValid && !buttonClicked ? (
     
-    <div className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5 bg-light">
-    <div className="card-header bg-transparent border-0 text-center text-uppercase">
-      <h3>{title}</h3>
+    <div>
+    <div>
     </div>
     <div className="contact-card">
       <Form onSubmit={handleSubmit} encType="multipart/form-data" autoComplete="off">
@@ -74,7 +82,7 @@ const ContactForm = ({ title }) => {
           <Form.Control
             name="name"
             type="text"
-            placeholder="Name"
+            placeholder='name'
             value={name}
             onChange={handleChange}
             onBlur={handleBlur}
@@ -97,17 +105,6 @@ const ContactForm = ({ title }) => {
           {emailError2 && <Alert variant="danger" className="mt-2">Email invalid.</Alert>}
         </Form.Group>
         <Form.Group>
-          <Form.Label>Your contact number (Optional)</Form.Label>
-          <Form.Control
-            name="contact"
-            type="text"
-            placeholder="Contact"
-            onChange={handleChange}
-            value={contact}
-            className='contact-card-container'
-          />
-        </Form.Group>
-        <Form.Group>
           <Form.Label>Message<span className="text-danger">*</span></Form.Label>
           <Form.Control
             name="message"
@@ -125,10 +122,16 @@ const ContactForm = ({ title }) => {
     </div>
   </div>
 ) : (
-  <div className="thankyou_details">
-    <Alert variant="success" className="mt-3">Mail sent successfully.</Alert>
-  </div>
+  <div className="thankyou">
+  <Alert variant="success" className="mt-3">
+    Mail sent successfully.
+    <Link className='re-contact' to="/contact" onClick={handleReload}>
+      Send another message
+    </Link>
+  </Alert>
+</div>
 );
-};
+}
+
 
 export default ContactForm;

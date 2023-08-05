@@ -3,6 +3,7 @@ import "./Layout.css";
 
 const Layout = ({children}) => {
   return (
+    
     <div>
       <section>
         {children}

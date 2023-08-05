@@ -17,3 +17,18 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
+  .thankyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    min-height: 100vh;
+    margin-top: -100px;
+  }
+
+  .re-contact{
+    display: flex;
+    justify-content: center;
+    
+  }
