@@ -6,6 +6,7 @@ import  Portfolio  from './pages/Portfolio';
 import  About  from './pages/About';
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
+import Footer from "./components/Footer";
 // import { useState, useEffect } from "react";
 // const fetchProjects = require('./utils/githubFetch'); 
 
@@ -20,7 +21,7 @@ const projects = [
       title: "Airbnb Clone",
       about: "A full recreation of the famous Airbnb app",
       url: "https://github.com/ChristianAlteri/airbnb-clone",
-      image: "./images/art-gallery.png"
+      image: "./images/insomnia-demo.png"
   },
   {
       id: '1',
@@ -75,10 +76,11 @@ const App = () => {
   // }, []);
 
   return (
-    // Footer
+    // Header
     <>
     <Layout>
       <Navbar />
+      <Footer />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
