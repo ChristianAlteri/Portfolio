@@ -72,9 +72,8 @@ const ContactForm = ({ title }) => {
 
   return !formValid && !buttonClicked ? (
     
-    <div>
-    <div>
-    </div>
+
+    
     <div className="contact-card">
       <Form onSubmit={handleSubmit} encType="multipart/form-data" autoComplete="off">
         <Form.Group>
@@ -86,7 +85,7 @@ const ContactForm = ({ title }) => {
             value={name}
             onChange={handleChange}
             onBlur={handleBlur}
-            className='contact-card-container'
+            className='contact-card-content'
           />
           {nameError && <Alert variant="danger" className="mt-2">Name is a required field.</Alert>}
         </Form.Group>
@@ -99,7 +98,7 @@ const ContactForm = ({ title }) => {
             value={email}
             onChange={handleChange}
             onBlur={handleBlur}
-            className='contact-card-container'
+            className='contact-card-content'
           />
           {emailError && <Alert variant="danger" className="mt-2">Email is a required field.</Alert>}
           {emailError2 && <Alert variant="danger" className="mt-2">Email invalid.</Alert>}
@@ -113,14 +112,14 @@ const ContactForm = ({ title }) => {
             value={message}
             onChange={handleChange}
             onBlur={handleBlur}
-            className='contact-card-container'
+            className='contact-card-content'
           />
           {messageError && <Alert variant="danger" className="mt-2 ">Message is a required field.</Alert>}
         </Form.Group>
         <p className="text-center mb-0"><Button type="submit" className="btn btn-primary btn-lg w-100 text-uppercase">Submit Now</Button></p>
       </Form>
     </div>
-  </div>
+  
 ) : (
   <div className="thankyou">
   <Alert variant="success" className="mt-3">
