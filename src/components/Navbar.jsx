@@ -3,6 +3,9 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
+import './Header.css'; 
+import Header from "./Header";
+import logo from '../assets/logo.png';
 // import { Nav, Modal, Button } from "react-bootstrap";
 
 function NavBar() {
@@ -38,8 +41,9 @@ function NavBar() {
 </Modal> */
   return (
     <nav>
-
+  
       <div className="nav-bar">
+        <Header image={logo}/>
         <Nav className="nav-bar">
           <Nav.Item>
             <Link to="/">Home</Link>

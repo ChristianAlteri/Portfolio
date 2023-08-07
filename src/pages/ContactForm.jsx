@@ -73,7 +73,7 @@ const ContactForm = ({ title }) => {
   return !formValid && !buttonClicked ? (
     
 
-    
+   <div className='center'>
     <div className="contact-card">
       <Form onSubmit={handleSubmit} encType="multipart/form-data" autoComplete="off">
         <Form.Group>
@@ -119,8 +119,10 @@ const ContactForm = ({ title }) => {
         <p className="text-center mb-0"><Button type="submit" className="btn btn-primary btn-lg w-100 text-uppercase">Submit Now</Button></p>
       </Form>
     </div>
+    </div>
   
 ) : (
+  <div className='center'>
   <div className="thankyou">
   <Alert variant="success" className="mt-3">
     Mail sent successfully.
@@ -128,6 +130,7 @@ const ContactForm = ({ title }) => {
       Send another message
     </Link>
   </Alert>
+</div>
 </div>
 );
 }

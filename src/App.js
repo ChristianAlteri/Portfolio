@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import { Routes, Route } from "react-router-dom";
 import  Home  from './pages/Home';
 import  ContactForm  from './pages/ContactForm';
@@ -8,10 +7,7 @@ import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
 import insomniaDemoImg from "./images/insomnia-demo.png";
-// import { useState, useEffect } from "react";
-// const fetchProjects = require('./utils/githubFetch'); 
 
-// import { fetchProjects }  from "./utils/githubFetch";
 
 
 
@@ -63,21 +59,8 @@ const projects = [
 ]
 
 const App = () => {
-  // const [projects, setProjects] = useState([]);
-
-  // useEffect(() => {
-  //   fetchProjects()
-  //     .then((projects) => {
-  //       setProjects(projects); 
-  //       console.log(projects);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error:', error);
-  //     });
-  // }, []);
 
   return (
-    // Header
     <>
     <Layout>
       <Navbar />

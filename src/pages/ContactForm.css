@@ -1,16 +1,25 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 66vh;
+}
+
 .contact-card {
-    display: flex;
-    margin-left: 33%;
-    width: 33%;
-    flex-basis: 33.33%;
-    margin-top: 33%;
-    align-items: center;
-    padding: 15px 15px;
-    border-radius: 50px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
-    margin-right: 1px;
-    background-color: #ffffff;
-  }
+  display: flex;
+  /* margin-top: 33%;
+  margin-left: 33%; */
+  justify-content: center;
+
+  align-items: center;
+  width: 33%;
+  flex-basis: 33.33%;
+  padding: 15px 15px;
+  border-radius: 50px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+  margin-right: 1px;
+  background-color: #ffffff;
+}
   
   .contact-card-content {
     display: flex;

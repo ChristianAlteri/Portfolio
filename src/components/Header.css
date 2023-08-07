@@ -1,0 +1,9 @@
+.logo-header {
+    /* background-color: "transparent"; */
+    padding-left: 10px;
+    /* padding-top: 10px; */
+    max-height: 4vh;
+    margin-top: 10px;
+    width: 100%;
+    text-transform: capitalize;
+}
