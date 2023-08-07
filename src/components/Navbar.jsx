@@ -6,44 +6,19 @@ import { Nav } from "react-bootstrap";
 import './Header.css'; 
 import Header from "./Header";
 import logo from '../assets/logo.png';
-// import { Nav, Modal, Button } from "react-bootstrap";
+import logo2 from '../assets/logo2.png';
+
+const logos = [logo, logo2]
+
+
 
 function NavBar() {
-//   const [showHtmlModal, setShowHtmlModal] = useState(false);
 
-//   const handleShowHtmlModal = () => {
-//     setShowHtmlModal(true);
-//   };
-
-//   const handleCloseHtmlModal = () => {
-//     setShowHtmlModal(false);
-//   };
-
-
-//   const htmlContent = document.documentElement.outerHTML;
-
-/* <Button variant="primary" onClick={handleShowHtmlModal}>
-  Show HTML Code
-</Button>
-
-<Modal show={showHtmlModal} onHide={handleCloseHtmlModal}>
-  <Modal.Header closeButton>
-    <Modal.Title>HTML Code</Modal.Title>
-  </Modal.Header>
-  <Modal.Body>
-    <pre>{htmlContent}</pre>
-  </Modal.Body>
-  <Modal.Footer>
-    <Button variant="secondary" onClick={handleCloseHtmlModal}>
-      Close
-    </Button>
-  </Modal.Footer>
-</Modal> */
   return (
     <nav>
   
       <div className="nav-bar">
-        <Header image={logo}/>
+        <Header image={logos}/>
         <Nav className="nav-bar">
           <Nav.Item>
             <Link to="/">Home</Link>

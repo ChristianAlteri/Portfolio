@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 66vh;
+  margin-top: 40px;
 }
 
 .contact-card {
@@ -10,7 +11,6 @@
   /* margin-top: 33%;
   margin-left: 33%; */
   justify-content: center;
-
   align-items: center;
   width: 33%;
   flex-basis: 33.33%;
@@ -18,7 +18,9 @@
   border-radius: 50px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
   margin-right: 1px;
-  background-color: #ffffff;
+  animation: flowGradient 8s linear infinite alternate, fadeIn 0.5s ease;
+  background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #007fff, #ff5555, #8000ff, #ff00ff);
+  background-size: 300% 300%;
 }
   
   .contact-card-content {
@@ -41,3 +43,21 @@
     justify-content: center;
 
   }
+
+  @keyframes flowGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

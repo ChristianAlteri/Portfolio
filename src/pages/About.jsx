@@ -1,41 +1,24 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Pages.css"; 
+import "./About.css";
+
 
 const About = () => {
   return (
-    <section>
-      <Container fluid className="page-section" id="About">
-        <Container className="page-content">
-          <Row className="justify-content-center"> {/* Center the row */}
-            <Col md={7} className="page-header">
-              <h1 className="heading-name">
-                <strong className="main-name">About</strong>
-              </h1>
-              <div style={{ padding: 50, textAlign: "left" }}>
-                {/* Add any additional content here */}
-              </div>
+    <section id="About">
+      <Container fluid className="About-Container">
+        <Container>
+          <Row>
+            <Col xs={12} sm={6} md={4} lg={3} className="About-Title">
+              <h1><strong>About</strong></h1>
             </Col>
-            <Col md={5} style={{ paddingBottom: 20 }}>
-                            Shall I compare thee to a summer's day?
-                Thou art more lovely and more temperate:
-                Rough winds do shake the darling buds of May,
-                And summer's lease hath all too short a date:
-
-                Sometime too hot the eye of heaven shines,
-                And often is his gold complexion dimmed;
-                And every fair from fair sometime declines,
-                By chance or nature's changing course untrimmed;
-
-                But thy eternal summer shall not fade
-                Nor lose possession of that fair thou owest;
-                Nor shall Death brag thou wanderest in his shade,
-                When in eternal lines to time thou growest:
-
-                So long as men can breathe or eyes can see,
-                So long lives this, and this gives life to thee.
-
-            In this sonnet, Shakespeare explores the idea of immortalizing the beauty of a beloved person through poetry, comparing their loveliness to a perfect summer's day. He suggests that the beauty of the beloved is more enduring than the fleeting nature of a summer day, which is subject to change and eventual decline. The poem captures the essence of love and the power of poetry to preserve it for eternity.
+            <Col xs={12} sm={6} md={8} lg={9} className="white-About-Card" >
+              <p>
+                I am a recent Computer Science graduate with a strong passion for technology. I possess a natural aptitude for solving intricate problems and a genuine enthusiasm for collaborating with diverse teams to shape the future of computing. The opportunity to join an exceptional team on a mission to create something extraordinary fills me with excitement. I thrive in dynamic environments and continuously seek out exciting opportunities to learn and acquire new skills. Additionally, I aspire to take on leadership roles.
+              </p>
+              <p>
+                During high school, I was elected as Head Boy, an experience that ignited my passion for driving projects forward and empowering my team to excel. Following graduation, I embarked on a unique path, pursuing my artistic aspirations. I founded and led an artists' collective, orchestrating distinctive fashion events, creating captivating art installations, and producing original music. This exhilarating journey honed my project management skills, enhanced my ability to foster team productivity, and nurtured my capacity for innovative thinking — proficiencies that continue to enrich all my professional endeavors to this day.
+              </p>
             </Col>
           </Row>
         </Container>

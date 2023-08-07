@@ -20,6 +20,9 @@
     background-color: #ffffff; 
     max-width: 13vh;
     max-height: 4vh;
+    /* animation: flowGradient 8s linear infinite alternate, fadeIn 0.5s ease;
+  background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #007fff, #ff5555, #8000ff, #ff00ff);
+  background-size: 300% 300%; */
   }
   
   /* .nav-item:last-child {

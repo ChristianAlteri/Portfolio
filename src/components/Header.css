@@ -1,9 +1,24 @@
+
 .logo-header {
-    /* background-color: "transparent"; */
     padding-left: 10px;
-    /* padding-top: 10px; */
     max-height: 4vh;
     margin-top: 10px;
     width: 100%;
     text-transform: capitalize;
-}
+    position: relative;
+  }
+  
+  .logo-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 50px;
+    max-height: auto;
+    opacity: 1;
+    transition: opacity 0.1s ;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
