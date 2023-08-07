@@ -1,33 +1,23 @@
 /* Portfolio.css */
 
-.white-rounded-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 70px;
-  position: relative;
-  
-}
-.white-rounded-card {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 50px;
-  align-items: center;
+.white-Rounded-Card {
+  border-radius: 30px;
   background-color: #ffffff;
   font-size: 14px;
-  color: #403f3f;
+  color: #565454;
   text-align: center;
-  position: relative;
-  width: 33%;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
   transition: opacity 0.2s ease;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.white-rounded-card img {
-  max-width: 100%;
+.white-Rounded-Card img {
+  position: relative;
+  width: 100%;
   object-fit: fill;
-  border-radius: 50px;
+  border-radius: 30px;
   transition: opacity 0.2s ease;
 }
 
@@ -36,17 +26,15 @@
   font-size: 18px;
   color: #000000;
   text-align: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
-.white-rounded-card:hover img {
+.white-Rounded-Card:hover img {
   opacity: 0; 
+  
 }
 
-.white-rounded-card:hover  {
+.white-Rounded-Card:hover {
   opacity: 1;
   object-fit: fill;
 }
-
-
-
