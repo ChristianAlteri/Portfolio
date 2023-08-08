@@ -21,19 +21,11 @@ const Home = () => {
                 <strong className="main-name">Welcome to my portfolio! 
                 </strong>
               </h1>
-              {/* <h1 className="heading-name" style={{ paddingBottom: 15 }}>
-                <strong className="main-name"> 
-                My name is Christian Alteri </strong>
-              </h1> */}
-
               <div style={{ padding: 50, textAlign: "left" }}>
-                {/* Add any additional content here */}
-                Maybe add something here chris
               </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              {/* Add any content for the second column here */}
             </Col>
           </Row>
         </Container>
