@@ -1,5 +1,4 @@
 import React from "react";
-// import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
@@ -15,11 +14,11 @@ const logos = [logo, logo2]
 function NavBar() {
 
   return (
-    <nav>
+    
   
       <div className="nav-bar">
         <Header image={logos}/>
-        <Nav className="nav-bar">
+        <Nav className="nav-bar" >
           <Nav.Item>
             <Link to="/">Home</Link>
           </Nav.Item>
@@ -34,7 +33,7 @@ function NavBar() {
           </Nav.Item>
         </Nav>
       </div>
-    </nav>
+    
   );
   }
 
