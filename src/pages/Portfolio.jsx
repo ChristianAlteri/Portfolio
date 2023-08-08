@@ -13,9 +13,9 @@ function Portfolio(props) {
           <Col
             key={project.id}
             xs={12}
-            sm={6}
-            md={4}
-            lg={3}
+            sm={12}
+            md={6}
+            lg={4}
             >
             <Card className="white-Rounded-Card">
               <a href={project.url}>

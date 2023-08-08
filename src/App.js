@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import  Home  from './pages/Home';
 import  ContactForm  from './pages/ContactForm';
 import  Portfolio  from './pages/Portfolio';
