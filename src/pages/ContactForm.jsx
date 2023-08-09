@@ -18,6 +18,7 @@ const ContactForm = ({ title }) => {
   });
 
   const isValidEmail = (email) => {
+    // testing email
     return /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email);
   };
 
@@ -25,7 +26,7 @@ const ContactForm = ({ title }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     
-    if (value.length <= 0 && name === 'name') {
+    if (value.length <= 0) {
       setFormErrors({ ...formErrors, nameError: true });
     } else if (name === 'email') {
       setFormErrors({ ...formErrors, emailError: value.length <= 0, emailError2: !isValidEmail(value) });
@@ -37,6 +38,7 @@ const ContactForm = ({ title }) => {
     setFormData({ ...formData, [name]: value });
   };
   
+  // handles the re sub
   const handleReload = () => {
     window.location.reload();
   };
@@ -45,6 +47,7 @@ const ContactForm = ({ title }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // de structure the input
     const { name, email, message } = formData;
     
     const nameError = !name;
@@ -61,6 +64,9 @@ const ContactForm = ({ title }) => {
     
     const formValid = !nameError && !emailError && !emailError2 && !messageError;
     if (formValid) {
+      // add functionality to use Node Mailer to actually send email
+
+      // right now not working
       console.log('Form submission successful', message);
       setButtonClicked(true); 
     }

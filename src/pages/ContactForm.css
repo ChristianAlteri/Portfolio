@@ -8,8 +8,6 @@
 
 .contact-card {
   display: flex;
-  /* margin-top: 33%;
-  margin-left: 33%; */
   justify-content: center;
   align-items: center;
   width: 33%;
