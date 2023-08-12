@@ -21,9 +21,9 @@ function Portfolio(props) {
               <a href={project.url}>
                 <Card.Img src={project.image} alt='screenshot of the application'  />
               </a>
-              <div className="white-Rounded-Card">
+              <div className="text-container">
                 <Card.Title className="card-title">{project.title}</Card.Title>
-                <Card.Text>{project.about}</Card.Text>
+                <Card.Text className="card-text">{project.about}</Card.Text>
               </div>
             </Card>
           </Col>

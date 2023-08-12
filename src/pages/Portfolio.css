@@ -2,7 +2,6 @@
 
 .white-Rounded-Card {
   border-radius: 30px;
-  /* background-color: #ffffff; */
   font-size: 14px;
   color: #565454;
   text-align: center;
@@ -10,30 +9,40 @@
   transition: opacity 0.2s ease;
   margin-top: 40px;
   margin-left: 40px;
-  margin-right: 40px;
   animation: flowGradient 8s linear infinite alternate, fadeIn 0.5s ease;
   background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #007fff, #ff5555, #8000ff, #ff00ff);
-  background-size: 300% 300%;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .white-Rounded-Card img {
   position: relative;
   width: 100%;
   object-fit: fill;
-  border-radius: 30px;
   transition: opacity 0.2s ease;
 }
 
 .card-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 34px;
   color: #000000;
   text-align: center;
   justify-content: center; 
 }
 
+.text-container {
+  display: none;
+}
 .white-Rounded-Card:hover img {
-  opacity: 0; 
+ display: none
+ 
+}
+
+.white-Rounded-Card:hover .text-container {
+  display: block;
   
 }
 
