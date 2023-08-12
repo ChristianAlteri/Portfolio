@@ -70,7 +70,8 @@ const App = () => {
 
   return (
     <>
-    <Layout>
+    <div>
+    {/* <Layout> */}
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -78,7 +79,8 @@ const App = () => {
           <Route path='/portfolio' element={<Portfolio projects={projects} />}></Route>
           <Route path='/contact' element={<ContactForm />}></Route>
         </Routes>
-    </Layout>  
+      </div>    
+    {/* </Layout>   */}
     <Footer />
     </>
   )
