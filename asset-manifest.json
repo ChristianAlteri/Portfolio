@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd48a76b.css",
+    "main.js": "/static/js/main.68da41a3.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/airbnb.png": "/static/media/airbnb.00ab4827810b967bac49.png",
+    "static/media/github.png": "/static/media/github.793cad4236054dcc060d.png",
+    "static/media/meshroom.png": "/static/media/meshroom.8613257f685f1de6f334.png",
+    "static/media/family-vault.png": "/static/media/family-vault.6dc9642a5c044562c3ef.png",
+    "static/media/Nosql-social.png": "/static/media/Nosql-social.befc985f16811262e52f.png",
+    "static/media/tech-blog.jpeg": "/static/media/tech-blog.4b26ab51c6bb7aed951f.jpeg",
+    "static/media/logo2.png": "/static/media/logo2.663b036946aef07a2dc8.png",
+    "static/media/logo.png": "/static/media/logo.2ccf800b6928aafe719c.png",
+    "index.html": "/index.html",
+    "main.dd48a76b.css.map": "/static/css/main.dd48a76b.css.map",
+    "main.68da41a3.js.map": "/static/js/main.68da41a3.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd48a76b.css",
+    "static/js/main.68da41a3.js"
+  ]
+}
